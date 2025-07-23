@@ -1,8 +1,0 @@
-fastapi
-uvicorn
-torch
-transformers
-pandas
-python-multipart
-pydantic
-starlette
