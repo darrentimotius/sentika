@@ -13,7 +13,7 @@ export default function textForm() {
     setLoading(true);
 
     try {
-      const res = await fetch("https://sentika.fly.dev/predict", {
+      const res = await fetch("http://api.sentika.site/predict", {
         method: "POST",
         headers: { "Content-Type": "application/json"},
         body: JSON.stringify({ text }),

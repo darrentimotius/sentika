@@ -15,7 +15,7 @@ export default function FileUpload() {
     formData.append("file", file);
 
     try {
-      const res = await fetch("https://sentika.fly.dev/predict_file", {
+      const res = await fetch("http://api.sentika.site/predict_file", {
         method: "POST",
         body: formData,
       });
