@@ -178,7 +178,7 @@ function ConfidenceBar({ confidence = 0, sentiment }) {
         <span>Confidence</span>
         <span>{pct.toFixed(2)}%</span>
       </div>
-      <div className="h-2 w-full rounded-full bg-slate-800/60 overflow-hidden">
+  <div className="h-2 w-full rounded-full bg-slate-700/60 overflow-hidden">
         <div
           className={`h-full bg-gradient-to-r ${color} transition-all duration-500 ease-out`}
           style={{ width: pct + "%" }}
