@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import TextForm from "@/components/textForm";
 import FileUpload from "@/components/fileUpload";
 
@@ -10,6 +10,12 @@ export default function Home() {
     { id: "text", label: "Analisis Teks" },
     { id: "file", label: "Batch via File" },
   ];
+
+    // Dynamic document title
+    useEffect(() => {
+        const current = tabs.find(t => t.id === tab)?.label || '';
+        document.title = current ? `Sentika — ${current}` : 'Sentika';
+    }, [tab]);
 
 return (
     <main className="min-h-screen relative overflow-hidden text-white">
@@ -63,7 +69,7 @@ return (
             </section>
 
             <footer className="mt-20 text-center text-[11px] text-slate-200">
-                Model inference endpoint: api.sentika.site • Dibuat untuk analisis sentimen Bahasa Indonesia.
+                Model inference endpoint: <a href="http://api.sentika.site/docs" target="_blank" rel="noopener noreferrer" className="underline decoration-dotted underline-offset-2 text-cyan-300 hover:text-cyan-200 focus:outline-none focus:ring-2 focus:ring-cyan-400/40 rounded-sm transition">api.sentika.site</a> • Dibuat untuk analisis sentimen Bahasa Indonesia.
             </footer>
         </div>
     </main>
