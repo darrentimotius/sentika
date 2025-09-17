@@ -56,15 +56,12 @@ data/                    (Datasets & processed splits)
 | Frontend   | Next.js | 15.4.1 |
 |            | React | 19.1.0 |
 | Styling    | Tailwind CSS | 4.x |
-| Backend API| FastAPI | ^0.11x (see your environment) |
+| Backend API| FastAPI | ^0.0.11 |
 | Model      | transformers (Hugging Face) | ~4.x |
 | Runtime    | Python | 3.10+ recommended |
 | Inference  | PyTorch | 2.x |
 
-\*Exact Python / library versions should be pinned in your deployment environment or a `requirements.txt` (add if distributing).
-
 ## Quick Start
-
 ### 1. Backend (FastAPI)
 Create & activate a virtual environment, then install dependencies (example):
 ```bash
