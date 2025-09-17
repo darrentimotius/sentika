@@ -2,3 +2,6 @@
 __pycache__/
 *.py[cod]
 model/
+node_modules/
+dist/
+.next/
