@@ -40,7 +40,7 @@ export default function FileUpload() {
     const formData = new FormData();
     formData.append("file", file);
     try {
-      const res = await fetch("http://api.sentika.site/predict_file", {
+      const res = await fetch("/api/file_upload", {
         method: "POST",
         body: formData,
       });

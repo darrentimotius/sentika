@@ -29,7 +29,7 @@ export default function TextForm() {
     setInferTime(null);
     try {
       const start = performance.now();
-      const res = await fetch("http://api.sentika.site/predict", {
+      const res = await fetch("/api/text", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text }),
