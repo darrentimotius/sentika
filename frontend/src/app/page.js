@@ -33,7 +33,7 @@ return (
                     Sentika: Sentiment Analyzer
                 </h1>
                 <p className="mx-auto max-w-2xl text-sm md:text-base leading-relaxed text-slate-100">
-                    Analisis sentimen Bahasa Indonesia secara instan. Masukkan teks tunggal atau unggah file CSV/TXT untuk prediksi massal.
+                    Analisis sentimen Bahasa Indonesia secara instan. Masukkan teks atau unggah file CSV/TXT untuk prediksi dalam jumlah besar.
                 </p>
             </header>
 
