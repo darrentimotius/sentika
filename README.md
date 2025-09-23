@@ -46,8 +46,6 @@ backend/
 	└── model/
 			├── predict.py     (Load IndoBERT + inference)
 			└── final_model.pt (Fine‑tuned weights)
-model_training/          (Notebooks & training utilities)
-data/                    (Datasets & processed splits)
 ```
 
 ## Technology Stack
@@ -160,7 +158,7 @@ Responses:
 5. Return label + probability
 
 ## Training
-Notebooks and scripts under `model_training/` illustrate data preparation and fine‑tuning (e.g., SMSA / combined datasets). Typical workflow:
+Notebooks and scripts are located in the **`model-training` branch** illustrate data preparation and fine‑tuning (e.g., SMSA / combined datasets). Typical workflow:
 1. Load and clean raw datasets
 2. Balance / upsample if needed
 3. Tokenize with IndoBERT tokenizer
