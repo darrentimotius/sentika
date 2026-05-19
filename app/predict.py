@@ -7,12 +7,12 @@ from utils import preprocess_text
 
 # Load Tokenizer and Config
 NUM_LABELS = 3  # Assuming three sentiment classes: positive, neutral, negative
-tokenizer = BertTokenizer.from_pretrained('./model/')
-config = BertConfig.from_pretrained('./model/')
+tokenizer = BertTokenizer.from_pretrained('indobenchmark/indobert-base-p1')
+config = BertConfig.from_pretrained('indobenchmark/indobert-base-p1')
 config.num_labels = NUM_LABELS
 
 # Instantiate model
-model = BertForSequenceClassification.from_pretrained('./model/', config=config)
+model = BertForSequenceClassification.from_pretrained('indobenchmark/indobert-base-p1', config=config)
 
 optimizer = optim.Adam(model.parameters(), lr=5e-6)
 model = model.cpu()
